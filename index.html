@@ -10,8 +10,10 @@
     <!-- Tailwind css CDN -->
     <script src="./js/tailwind.js"></script>
 
-    <!-- daisy Ui library -->
-    <link rel="stylesheet" href="./css/uiComponents.css">
+    <!-- daisy Ui library and flowbit ui library css -->
+    <link rel="stylesheet" href="./css/ui/uiComponents.css">
+    <link rel="stylesheet" href="./css/ui/flowbit.css" />
+
 
     <!-- flaticon interfce icons -->
     <link rel="stylesheet" href="./css/icons/icon.css">
@@ -19,6 +21,10 @@
     <!-- main css file -->
     <link rel="stylesheet" href="./css/main.css">
 
+
+    <!-- flowbit ui library javascript -->
+    <script src="./js/ui/flowbit.js"></script>
+    <script src="./js/ui/date-picker.js"></script>
 
 </head>
 
@@ -129,10 +135,10 @@
                             <div class="flex flex-col lg:flex-row gap-4 ">
 
                                 <!-- hotels dropdown -->
-                                <div class="bg-white flex items-center justify-c px-3 flex-1">
+                                <div class="bg-white flex items-center justify-c px-3 flex-1 ">
                                     <i class="fi fi-rr-caret-down text-xl text-[#00c7f2]"></i>
                                     <select
-                                        class="text-black appearance-none outline-none px-2 w-full h-full  py-2 px-3">
+                                        class="text-black appearance-none outline-none px-2 w-full h-full py-2 px-3 border-none outline-none focus:ring-0 ">
                                         <option value="1">Hotel/Destinazione</option>
                                         <option value="2">Two</option>
                                         <option value="3">Three</option>
@@ -150,30 +156,37 @@
                                 <div class="bg-white flex items-center justify-c px-3 flex-1">
                                     <i class="fi fi-sr-briefcase text-[#00c7f2]"></i>
                                     <input type="text" placeholder="Volo e soggiorno"
-                                        class="w-full h-full px-3 outline-none py-2 px-3">
+                                        class="w-full h-full px-3 outline-none py-2 px-3 border-none outline-none focus:ring-0">
                                 </div>
                             </div>
 
                             <div class="flex lg:flex-row gap-4 flex-col">
 
                                 <!-- date input for check in -->
-                                <div class="bg-white flex items-center justify-center px-3">
-                                    <i class="fi fi-sr-calendar text-[#00c7f2]"></i>
-                                    <input type="date" class="w-full h-full px-3 outline-none py-2 px-3">
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                        <i class="fi fi-sr-calendar text-[#00c7f2]"></i>
+                                    </div>
+                                    <input datepicker="" type="text"
+                                        class="bg-white border border-gray-300 text-gray-900 sm:text-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5   datepicker-input"
+                                        placeholder="Check In">
                                 </div>
 
                                 <!-- date input for check out -->
-                                <div class="bg-white flex items-center justify-center px-3">
-                                    <i class="fi fi-sr-calendar text-[#00c7f2]"></i>
-                                    <input type="date"
-                                        class="w-full h-full px-3 outline-none py-2 px-3 appearence-none">
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                        <i class="fi fi-sr-calendar text-[#00c7f2]"></i>
+                                    </div>
+                                    <input datepicker="" type="text"
+                                        class="bg-white border border-gray-300 text-gray-900 sm:text-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5   datepicker-input"
+                                        placeholder="Check Out">
                                 </div>
 
                                 <!-- input for how many people -->
                                 <div class="bg-white flex items-center justify-center px-3">
                                     <i class="fi fi-sr-users text-[#00c7f2]"></i>
                                     <input type="text" placeholder="Composizione camera"
-                                        class="w-full h-full px-3 outline-none py-2 px-3">
+                                        class="w-full h-full px-3 outline-none py-2 px-3 border-none outline-none focus:ring-0">
                                 </div>
 
                                 <!-- button -->
