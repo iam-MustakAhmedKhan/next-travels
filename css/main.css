@@ -35,7 +35,7 @@
  /* hero  section main start */
 
  .main,
- .villaggi-main {
+ .villaggi-main,.personalizza-main {
      background-image: url('../asstets/images/home-img.jpeg');
      height: 100%;
      width: 100%;
@@ -45,7 +45,7 @@
 
  }
 
- .villaggi-main {
+ .villaggi-main,.personalizza-main {
 
     background-image: linear-gradient(180deg, rgba(0, 199, 242, 1) 0%, rgba(33, 54, 70, 0) 60%),url('../asstets/images/img-2.jpeg');
  }

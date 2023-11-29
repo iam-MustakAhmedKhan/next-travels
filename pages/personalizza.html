@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Search Page</title>
+
+    <!-- Tailwind css CDN -->
+    <script src="../js/tailwind.js"></script>
+
+    <!-- daisy Ui library and flowbit ui library css -->
+    <link rel="stylesheet" href="../css/ui/uiComponents.css">
+    <link rel="stylesheet" href="../css/ui/flowbit.css" />
+
+    <!-- flaticon interfce icons -->
+    <link rel="stylesheet" href="../css/icons/icon.css">
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="../css/main.css">
+
+
+    <!-- flowbit ui library javascript -->
+    <script src="../js/ui/flowbit.js"></script>
+    <script src="../js/ui/date-picker.js"></script>
+
+</head>
+
+<body>
+    <!-- Navbar start -->
+
+    <div class="navbar-wrap">
+        <!-- large screen navbar start -->
+        <nav class="bg-[#00416a]">
+            <div class="container mx-auto relative px-4 py-4 flex justify-between items-center ">
+                <!-- logo  -->
+                <a class="text-3xl font-bold leading-none  " href="/">
+                    <h1 class="max-lg:text-white text-white">LOGO</h1>
+                </a>
+
+                <!-- hamburger menu -->
+                <div class="lg:hidden">
+                    <button class="navbar-burger flex items-center text-white p-3 text-xl">
+                        <i class="fi fi-br-bars-staggered"></i>
+                    </button>
+                </div>
+
+                <!-- link items -->
+                <ul
+                    class="hidden absolute top-1/2 left-1/3 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                    <li><a class="text-md hover:text-gray-400 transition-all text-white" href="">villaggi</a></li>
+                    <li><a class="text-md hover:text-gray-400 transition-all text-white" href="#">Offerte</a></li>
+
+                    <li><a class="text-md hover:text-gray-400 transition-all text-white" href="#">Cataloghi</a></li>
+                </ul>
+
+                <!-- phone, envelop,and people icon -->
+                <a class="hidden lg:inline-block lg:ml-auto py-2 px-6 text-sm text-white font-bold  rounded-full transition duration-200"
+                    href="#"><i class="fi fi-sr-phone-call text-xl"></i></a>
+                <a class="hidden lg:inline-block py-2 px-6 text-sm text-white font-bold rounded-full transition duration-200"
+                    href="#"><i class="fi fi-sr-envelope text-xl"></i></a>
+                <a class="hidden lg:inline-block py-2 px-6 text-sm text-white font-bold rounded-full transition duration-200"
+                    href="#"><i class="fi fi-sr-user text-xl"></i></a>
+            </div>
+        </nav>
+        <!-- large screen navbar end -->
+    </div>
+
+    <!-- Mobile Nav start -->
+    <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+                <!-- logo -->
+                <a class="mr-auto text-3xl font-bold leading-none" href="/">
+                    <h1>LOGO</h1>
+                </a>
+                <!-- cross icon when mobile side menu open -->
+                <button class="navbar-close">
+                    <i class="fi fi-br-cross"></i>
+                </button>
+
+            </div>
+            <!-- link items for mobile sidebar -->
+            <div>
+                <ul>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">villaggi</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">Offerte</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">Cataloghi</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- phone,envelop,and people icons -->
+            <div class="mt-auto">
+                <div class="pt-6 flex gap-4">
+                    <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none  hover:bg-gray-100 rounded-xl"
+                        href="#"><i class="fi fi-sr-phone-call text-xl"></i></a>
+                    <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-black font-semibold hover:bg-gray-100 rounded-xl"
+                        href="#"><i class="fi fi-sr-envelope text-xl"></i></a>
+                    <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-black font-semibold hover:bg-gray-100 rounded-xl"
+                        href="#"><i class="fi fi-sr-user text-xl"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Mobile Nav End -->
+
+    <!-- Navbar End -->
+
+    <!-- personalizza page main section start -->
+    <main>
+        <div class="personalizza-main px-6 lg:h-[60vh]">
+            <div id="personalizza-hero-section">
+                <div class="container mx-auto">
+                    <div
+                        class="personalizza-hero-contents flex flex-col items-center justify-center lg:items-start h-screen lg:h-[60vh]">
+
+                        <div class="flex w-full justify-between max-lg:flex-col gap-8">
+                            <!-- infos start -->
+
+                            <div>
+                                <h1 class="text-4xl font-bold py-2">VILLAGE Amphoras Beach</h1>
+
+                                <div class="text-xl flex gap-2 items-center">
+                                    <p>Egitto</p>
+                                    <span> | </span>
+                                    <p> Sharm El Sheikh </p>
+
+                                    <a href="#" class="flex items-center gap-2">
+                                        <i class="fi fi-ss-map-marker text-4xl"></i>
+                                        <h1 class="underline">MAPPA</h1>
+                                    </a>
+
+                                </div>
+                                <div class="mt-5 flex justify-between items-center gap-2 flex-wrap">
+                                    <button class="bg-[#00939c] px-3 py-1 flex-1 text-white"> info </button>
+                                    <button class="bg-[#00939c] px-3 py-1 flex-1 text-white"> Villaggio </button>
+                                    <button class="bg-[#00939c] px-3 py-1 flex-1 text-white"> Camere </button>
+                                    <button class="bg-[#00939c] px-3 py-1 flex-1 text-white"> Inc./Esc. </button>
+                                    <button class="bg-[#00939c] px-3 py-1 flex-1 text-white">serviZi</button>
+                                    <button class="bg-[#00939c] px-3 py-1 flex-1 text-white">Condizioni</button>
+
+                                </div>
+
+                            </div>
+
+                            <!-- infos end -->
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- personalizza page main section end -->
+
+
+    <!-- main section start -->
+
+    <main>
+        <div class="container py-12 mx-auto">
+
+            <div class="personalizza-wrap flex max-lg:flex-col items-start gap-12 w-full">
+
+                <!-- left -->
+                <div class="left w-full">
+                    <div class="title">
+                        <h1 class="text-3xl">PERSONALIZZA VACANZA</h1>
+                        <p class="text-gray-500">Personalizza il tuo viaggio</p>
+                    </div>
+
+                    <!-- box start -->
+                    <div>
+                        <div class="box-top-bar bg-[#00416a] text-white flex gap-4 px-5 items-center p-2 w-full my-5">
+
+                            <p class=" text-2xl"><i class="fi fi-sr-bed-alt text-[#00c7f2]"></i></p>
+                            <p class="text-white text-2xl">CAMERA 1</p>
+                            <span>2 Adulti</span>
+
+                        </div>
+
+                        <div class="border border-[#00416a] p-5 m-5 flex flex-col gap-2">
+
+                            <!-- checkboxes -->
+                            <div class="border border-[#00416a] px-3 py-2">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <input checked id="DOPPIA-DELUXE" type="checkbox" value=""
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                                        <label for="DOPPIA-DELUXE"
+                                            class="ms-2 text-xl font-medium text-[#00416a]">DOPPIA DELUXE</label>
+                                    </div>
+
+                                    <button>
+                                        <i class="fi fi-rr-info"></i>
+                                    </button>
+
+
+                                </div>
+                            </div>
+
+                            <div class="border border-[#00416a] px-3 py-2">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <input id="CAMERA-COMFORT" type="checkbox" value=""
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                                        <label for="CAMERA-COMFORT"
+                                            class="ms-2 text-xl font-medium text-[#00416a]">CAMERA COMFORT</label>
+                                    </div>
+
+                                    <button>
+                                        <i class="fi fi-rr-info"></i>
+                                    </button>
+
+
+                                </div>
+                            </div>
+
+                            <div class="border border-[#00416a] px-3 py-2">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <input id="TRIPLA-DELUXE" type="checkbox" value=""
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                                        <label for="TRIPLA-DELUXE"
+                                            class="ms-2 text-xl font-medium text-[#00416a]">TRIPLA DELUXE</label>
+                                    </div>
+
+                                    <button>
+                                        <i class="fi fi-rr-info"></i>
+                                    </button>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- box end -->
+                    <!-- box start -->
+                    <div>
+                        <div class="box-top-bar bg-[#00416a] text-white flex gap-4 px-5 items-center p-2 w-full my-5">
+
+                            <p class=" text-2xl"><i class="fi fi-ss-cocktail text-[#00c7f2]"></i></p>
+                            <p class="text-white text-2xl">TRATTAMENTO</p>
+                            <span>Lorem ipsum</span>
+
+                        </div>
+
+                        <div class="border border-[#00416a] p-5 m-5 flex flex-col gap-2">
+
+                            <!-- checkboxes -->
+                            <div class="border border-[#00416a] px-3 py-2">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <input checked id="ALL-INCLUSIVE" type="checkbox" value=""
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                                        <label for="ALL-INCLUSIVE" class="ms-2 text-xl font-medium text-[#00416a]">ALL
+                                            INCLUSIVE</label>
+                                    </div>
+
+                                    <button>
+                                        <i class="fi fi-rr-info"></i>
+                                    </button>
+
+
+                                </div>
+                            </div>
+
+                            <div class="border border-[#00416a] px-3 py-2">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <input id="HARD-ALL-INCLUSIVE" type="checkbox" value=""
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                                        <label for="HARD-ALL-INCLUSIVE"
+                                            class="ms-2 text-xl font-medium text-[#00416a]">HARD ALL INCLUSIVE</label>
+                                    </div>
+
+                                    <button>
+                                        <i class="fi fi-rr-info"></i>
+                                    </button>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- box end -->
+
+
+                    <!-- box start -->
+                    <div>
+                        <div class="box-top-bar bg-[#00416a] text-white flex gap-4 px-5 items-center p-2 w-full my-5">
+
+                            <p class=" text-2xl"><i class="fi fi-sr-plane-departure text-[#00c7f2]"></i></p>
+                            <p class="text-white text-2xl">VOLI</p>
+                            <span>Lorem ipsum</span>
+
+                        </div>
+
+                        <div class="border border-[#00416a] p-5 m-5 flex flex-col gap-2">
+
+                            <div class="voli-info">
+                                <h1 class="text-2xl">VOLI</h1>
+                                <p class="text-gray-600">Di seguito le alternative di volo disponibili per questo
+                                    pacchetto (ricordati Che, in prossimitå della partenza, li
+                                    orari del volo potrebbero subire variazioni),
+                                    Se disponibile, puoi selezionare posti volo in classe Economy Premium per un viaggio
+                                    piü confortevole</p>
+                            </div>
+
+                            <!-- companies start  -->
+                            <div>
+
+                                <div class="px-3 py-2">
+
+                                    <div class="flex max-lg:flex-wrap gap-4 items-start">
+
+                                        <div class="flex gap-4 items-center">
+                                            <input checked type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                                            <div class="company">
+                                                <p>COMPAGNIA</p>
+                                                <div class="comp-img w-28 h-auto">
+                                                    <img src="../asstets/images/img-2.jpeg"
+                                                        class="w-full h-full object-cover" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="flight-info w-full">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fi fi-rs-arrow-up-right text-[#00c7f2]"></i>
+                                                <p>VOLO DI ANDATA</p>
+                                            </div>
+
+                                            <div class="bg-[#00c7f2] w-full px-3 py-2 flex">
+
+                                                <div>
+                                                    <p>VOLO/CLASSE</p>
+                                                    <p>NO 2242 Y</p>
+                                                </div>
+
+                                                <div
+                                                    class="divider divider-horizontal before:bg-gray-600 after:bg-gray-600">
+                                                </div>
+
+                                                <div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">PARTENZA</p>
+                                                        <p>12/12/2023 ore 08.30 <br>
+                                                            <span class="font-bold">DA:</span> MILANO MALPENSA (MXP)
+                                                        </p>
+                                                    </div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">SCALO</p>
+                                                        <p>DIRECT </p>
+                                                    </div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">ARRIVO</p>
+                                                        <p>del 12/12/2023 ore 08.30 <br>
+                                                            <span class="font-bold">DA:</span> LAMEZIA TERME (SIJF)
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+                            <!-- companies end -->
+
+                            <!-- companies start  -->
+                            <div>
+
+                                <div class="px-3 py-2">
+
+                                    <div class="flex max-lg:flex-wrap items-start gap-4">
+
+
+                                        <div class="flex items-center gap-4">
+                                            <input checked type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                                            <div class="company">
+                                                <p>COMPAGNIA</p>
+                                                <div class="comp-img w-28 h-auto">
+                                                    <img src="../asstets/images/img-2.jpeg"
+                                                        class="w-full h-full object-cover" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="flight-info w-full">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fi fi-rs-arrow-down-left text-[#00c7f2]"></i>
+                                                <p>VOLO DI ANDATA</p>
+                                            </div>
+
+                                            <div class="bg-[#00939c] w-full px-3 py-2 flex">
+
+                                                <div>
+                                                    <p>VOLO/CLASSE</p>
+                                                    <p>NO 2242 Y</p>
+                                                </div>
+
+                                                <div
+                                                    class="divider divider-horizontal before:bg-gray-600 after:bg-gray-600">
+                                                </div>
+
+                                                <div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">PARTENZA</p>
+                                                        <p>12/12/2023 ore 08.30 <br>
+                                                            <span class="font-bold">DA:</span> MILANO MALPENSA (MXP)
+                                                        </p>
+                                                    </div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">SCALO</p>
+                                                        <p>DIRECT </p>
+                                                    </div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">ARRIVO</p>
+                                                        <p>del 12/12/2023 ore 08.30 <br>
+                                                            <span class="font-bold">DA:</span> LAMEZIA TERME (SIJF)
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+                            <!-- companies end -->
+
+                            <div class="divider before:bg-gray-600 after:bg-gray-600"></div>
+
+                            <!-- companies start  -->
+                            <div>
+
+                                <div class="px-3 py-2">
+
+                                    <div class="flex max-lg:flex-wrap gap-4 items-start">
+
+                                        <div class="flex gap-4 items-center">
+                                            <input type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                                            <div class="company">
+                                                <p>COMPAGNIA</p>
+                                                <div class="comp-img w-28 h-auto">
+                                                    <img src="../asstets/images/img-2.jpeg"
+                                                        class="w-full h-full object-cover" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="flight-info w-full">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fi fi-rs-arrow-up-right text-[#00c7f2]"></i>
+                                                <p>VOLO DI ANDATA</p>
+                                            </div>
+
+                                            <div class="bg-[#00c7f2] w-full px-3 py-2 flex">
+
+                                                <div>
+                                                    <p>VOLO/CLASSE</p>
+                                                    <p>NO 2242 Y</p>
+                                                </div>
+
+                                                <div
+                                                    class="divider divider-horizontal before:bg-gray-600 after:bg-gray-600">
+                                                </div>
+
+                                                <div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">PARTENZA</p>
+                                                        <p>12/12/2023 ore 08.30 <br>
+                                                            <span class="font-bold">DA:</span> MILANO MALPENSA (MXP)
+                                                        </p>
+                                                    </div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">SCALO</p>
+                                                        <p>DIRECT </p>
+                                                    </div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">ARRIVO</p>
+                                                        <p>del 12/12/2023 ore 08.30 <br>
+                                                            <span class="font-bold">DA:</span> LAMEZIA TERME (SIJF)
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+                            <!-- companies end -->
+
+                            <!-- companies start  -->
+                            <div>
+
+                                <div class="px-3 py-2">
+
+                                    <div class="flex max-lg:flex-wrap items-start gap-4">
+
+
+                                        <div class="flex items-center gap-4">
+                                            <input type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                                            <div class="company">
+                                                <p>COMPAGNIA</p>
+                                                <div class="comp-img w-28 h-auto">
+                                                    <img src="../asstets/images/img-2.jpeg"
+                                                        class="w-full h-full object-cover" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="flight-info w-full">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fi fi-rs-arrow-down-left text-[#00c7f2]"></i>
+                                                <p>VOLO DI ANDATA</p>
+                                            </div>
+
+                                            <div class="bg-[#00939c] w-full px-3 py-2 flex">
+
+                                                <div>
+                                                    <p>VOLO/CLASSE</p>
+                                                    <p>NO 2242 Y</p>
+                                                </div>
+
+                                                <div
+                                                    class="divider divider-horizontal before:bg-gray-600 after:bg-gray-600">
+                                                </div>
+
+                                                <div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">PARTENZA</p>
+                                                        <p>12/12/2023 ore 08.30 <br>
+                                                            <span class="font-bold">DA:</span> MILANO MALPENSA (MXP)
+                                                        </p>
+                                                    </div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">SCALO</p>
+                                                        <p>DIRECT </p>
+                                                    </div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">ARRIVO</p>
+                                                        <p>del 12/12/2023 ore 08.30 <br>
+                                                            <span class="font-bold">DA:</span> LAMEZIA TERME (SIJF)
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+                            <!-- companies end -->
+
+                            <div class="divider before:bg-gray-600 after:bg-gray-600"></div>
+
+                            <!-- companies start  -->
+                            <div>
+
+                                <div class="px-3 py-2">
+
+                                    <div class="flex max-lg:flex-wrap gap-4 items-start">
+
+                                        <div class="flex gap-4 items-center">
+                                            <input type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                                            <div class="company">
+                                                <p>COMPAGNIA</p>
+                                                <div class="comp-img w-28 h-auto">
+                                                    <img src="../asstets/images/img-2.jpeg"
+                                                        class="w-full h-full object-cover" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="flight-info w-full">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fi fi-rs-arrow-up-right text-[#00c7f2]"></i>
+                                                <p>VOLO DI ANDATA</p>
+                                            </div>
+
+                                            <div class="bg-[#00c7f2] w-full px-3 py-2 flex">
+
+                                                <div>
+                                                    <p>VOLO/CLASSE</p>
+                                                    <p>NO 2242 Y</p>
+                                                </div>
+
+                                                <div
+                                                    class="divider divider-horizontal before:bg-gray-600 after:bg-gray-600">
+                                                </div>
+
+                                                <div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">PARTENZA</p>
+                                                        <p>12/12/2023 ore 08.30 <br>
+                                                            <span class="font-bold">DA:</span> MILANO MALPENSA (MXP)
+                                                        </p>
+                                                    </div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">SCALO</p>
+                                                        <p>DIRECT </p>
+                                                    </div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">ARRIVO</p>
+                                                        <p>del 12/12/2023 ore 08.30 <br>
+                                                            <span class="font-bold">DA:</span> LAMEZIA TERME (SIJF)
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+                            <!-- companies end -->
+
+                            <!-- companies start  -->
+                            <div>
+
+                                <div class="px-3 py-2">
+
+                                    <div class="flex max-lg:flex-wrap items-start gap-4">
+
+
+                                        <div class="flex items-center gap-4">
+                                            <input type="checkbox" value=""
+                                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                                            <div class="company">
+                                                <p>COMPAGNIA</p>
+                                                <div class="comp-img w-28 h-auto">
+                                                    <img src="../asstets/images/img-2.jpeg"
+                                                        class="w-full h-full object-cover" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="flight-info w-full">
+                                            <div class="flex items-center gap-2">
+                                                <i class="fi fi-rs-arrow-down-left text-[#00c7f2]"></i>
+                                                <p>VOLO DI ANDATA</p>
+                                            </div>
+
+                                            <div class="bg-[#00939c] w-full px-3 py-2 flex">
+
+                                                <div>
+                                                    <p>VOLO/CLASSE</p>
+                                                    <p>NO 2242 Y</p>
+                                                </div>
+
+                                                <div
+                                                    class="divider divider-horizontal before:bg-gray-600 after:bg-gray-600">
+                                                </div>
+
+                                                <div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">PARTENZA</p>
+                                                        <p>12/12/2023 ore 08.30 <br>
+                                                            <span class="font-bold">DA:</span> MILANO MALPENSA (MXP)
+                                                        </p>
+                                                    </div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">SCALO</p>
+                                                        <p>DIRECT </p>
+                                                    </div>
+                                                    <div class="flex gap-2">
+                                                        <p class="w-24">ARRIVO</p>
+                                                        <p>del 12/12/2023 ore 08.30 <br>
+                                                            <span class="font-bold">DA:</span> LAMEZIA TERME (SIJF)
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+                            <!-- companies end -->
+
+                        </div>
+                    </div>
+                    <!-- box end -->
+
+                    <!-- box start -->
+                    <div>
+                        <div class="box-top-bar bg-[#00416a] text-white flex gap-4 px-5 items-center p-2 w-full my-5">
+
+                            <p class=" text-2xl"><i class="fi fi-br-bus text-[#00c7f2]"></i></p>
+                            <p class="text-white text-2xl">TRASFERIMENTI</p>
+                            <span>Lorem ipsum</span>
+
+                        </div>
+
+                        <div class="border border-[#00416a] p-5 m-5 flex flex-col gap-2">
+
+                            <!-- checkboxes -->
+                            <div class="border border-[#00416a] px-3 py-2">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <input id="NON-INCLUSI" type="checkbox" value=""
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                                        <label for="NON-INCLUSI" class="ms-2 text-xl font-medium text-[#00416a]">NON
+                                            INCLUSI</label>
+                                    </div>
+
+                                    <button>
+                                        <i class="fi fi-rr-info"></i>
+                                    </button>
+
+
+                                </div>
+                            </div>
+
+                            <div class="border border-[#00416a] px-3 py-2">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <input checked id="INCLUSI-ANDATA/RITORNO" type="checkbox" value=""
+                                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                                        <label for="INCLUSI-ANDATA/RITORNO"
+                                            class="ms-2 text-xl font-medium text-[#00416a]">INCLUSI
+                                            ANDATA/RITORNO</label>
+                                    </div>
+
+                                    <button>
+                                        <i class="fi fi-rr-info"></i>
+                                    </button>
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <!-- box end -->
+
+                </div>
+
+
+                <!-- right -->
+                <div class="right w-1/2 max-lg:w-full shadow-2xl">
+
+                    <div>
+                        <div class="relative bg-[#00416a]">
+                            <h3 class=" text-white px-4 py-1">EGITTO</h3>
+
+                            <div
+                                class="w-24 h-24 bg-[#ea088c] rounded-full absolute -top-8 right-12 flex items-center justify-center">
+                                <div class="w-20 h-20 border border-2 border-white rounded-full">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+
+                            <div class="px-4">
+                                <div class="flex items-center justify-between py-2">
+                                    <h1 class="text-xl font-semibold">LOREM IPSUM <br> Amphoras Beach</h1>
+                                    <button><i
+                                            class="fi fi-rs-star bg-[#00416a] text-white h-auto w-auto text-2xl p-2"></i></button>
+                                </div>
+                                <div class="flex items-center justify-between my-2">
+                                    <p class="text-gray-500 text-sm">ECITTO | SHARM EL</p>
+                                    <button><i
+                                            class="fi  fi-rr-upload bg-[#00416a] text-white h-auto w-auto text-2xl p-2"></i></button>
+                                </div>
+
+                                <div class="divider before:bg-gray-600 after:bg-gray-600"></div>
+
+                                <div>
+                                    <div class="flex items-center justify-between py-2">
+                                        <p>DETTAGLI PROPOSTA</p>
+                                        <button class="text-[#00c7f2]">MODIFICA <i class="fi fi-sr-pencil"></i></button>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <div class="i-con text-[#00c7f2]">
+                                            <i class="fi fi-sr-calendar-check"></i>
+                                        </div>
+                                        <div class="c-ontent">
+
+                                            <p class="font-semibold">Dal <span class="text-[#00c7f2]">12/11/2023</span>
+                                                al <span class="text-[#00c7f2]">20/11/2023</span></p>
+                                            <p class="text-sm text-gray-500">8 giorni 7 notti</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider before:bg-gray-600 after:bg-gray-600"></div>
+
+                                    <div class="flex items-start gap-3">
+                                        <div class="i-con text-[#00c7f2]">
+                                            <i class="fi fi-sr-users"></i>
+                                        </div>
+                                        <div class="c-ontent">
+                                            <p class="text-sm text-gray-500">2 Adulti | O Bambini</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-start gap-3">
+                                        <div class="i-con text-[#00c7f2]">
+                                            <i class="fi fi-sr-bed-alt"></i>
+                                        </div>
+                                        <div class="c-ontent w-full">
+
+                                            <p class="text-sm text-gray-500">1 CAMERA</p>
+                                            <div class="flex items-center justify-between w-full">
+                                                <p class="font-semibold text-[#00c7f2]">Camera Doppia Deluxe</p>
+                                                <button class="text-[#00c7f2]">MODIFICA <i
+                                                        class="fi fi-sr-pencil"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex items-center gap-3 w-full">
+                                        <div class="i-con text-[#00c7f2]">
+                                            <i class="fi fi-ss-cocktail"></i>
+                                        </div>
+
+                                        <div class="flex items-center justify-between py-2 w-full">
+                                            <p class="text-gray-500">Hard All Inclusive</p>
+                                            <button class="text-[#00c7f2]">MODIFICA <i
+                                                    class="fi fi-sr-pencil"></i></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="divider before:bg-gray-600 after:bg-gray-600"></div>
+
+                                    <div class="flex items-center justify-between w-full">
+                                        <p class="font-semibold text-[#00c7f2]">Camera Doppia Deluxe</p>
+
+
+                                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                                            class="text-white focus:ring-0 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center text-gray-500"
+                                            type="button">Dettagli <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                <path stroke="currentColor" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                            </svg>
+                                        </button>
+
+                                        <!-- Dropdown menu -->
+                                        <div id="dropdown"
+                                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                                aria-labelledby="dropdownDefaultButton">
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"
+                                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                                        out</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class="flex items-center justify-between py-2 w-full">
+                                        <p class="text-gray-500">Andata/Ritorno</p>
+                                        <button class="text-[#00c7f2]">MODIFICA <i class="fi fi-sr-pencil"></i></button>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="bg-[#00416a] px-4 py-3 text-white mt-8">
+
+                                <div class="flex items-center justify-between">
+                                    <p class="text-white font-semibold">PREZZO FINITO</p>
+                                    <p class="text-white line-through">€ 2428.00</p>
+                                    <button><i class="fi fi-rs-info"></i></button>
+                                </div>
+
+                                <div class="text-center mt-5 pb-5 relative w-full">
+                                    <h1 class="text-2xl text-white font-bold">€ 2428.00</h1>
+
+                                    <button
+                                        class="bg-[#ea088c] py-2 px-3 text-white absolute left-[50%] translate-x-[-50%] top-10">CONTINUA</button>
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- main section end -->
+
+
+
+    <!-- main javascript file linking -->
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
