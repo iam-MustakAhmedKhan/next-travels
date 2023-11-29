@@ -35,7 +35,7 @@
         <nav class="bg-[#00416a]">
             <div class="container mx-auto relative px-4 py-4 flex justify-between items-center ">
                 <!-- logo  -->
-                <a class="text-3xl font-bold leading-none  " href="#">
+                <a class="text-3xl font-bold leading-none  " href="/">
                     <h1 class="max-lg:text-white text-white">LOGO</h1>
                 </a>
 
@@ -74,7 +74,7 @@
             class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
             <div class="flex items-center mb-8">
                 <!-- logo -->
-                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                <a class="mr-auto text-3xl font-bold leading-none" href="/">
                     <h1>LOGO</h1>
                 </a>
                 <!-- cross icon when mobile side menu open -->
@@ -208,7 +208,7 @@
     </section>
     <!-- search result section End -->
 
-    <!-- seach page main sectio start -->
+    <!-- seach page main section start -->
 
     <main class="py-5">
         <div class="container mx-auto px-6">
@@ -247,24 +247,26 @@
 
                         <div class="flex gap-4 flex-col">
 
-                            <!-- date input for check in -->
-                            <div class="relative">
-                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                    <i class="fi fi-sr-calendar text-[#00c7f2]"></i>
+                            <div class="flex gap-4 max-lg:flex-col">
+                                <!-- date input for check in -->
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                        <i class="fi fi-sr-calendar text-[#00c7f2]"></i>
+                                    </div>
+                                    <input datepicker="" type="text"
+                                        class="bg-white border border-gray-300 text-gray-900 sm:text-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5   datepicker-input"
+                                        placeholder="Check In">
                                 </div>
-                                <input datepicker="" type="text"
-                                    class="bg-white border border-gray-300 text-gray-900 sm:text-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5   datepicker-input"
-                                    placeholder="Check In">
-                            </div>
 
-                            <!-- date input for check out -->
-                            <div class="relative">
-                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                    <i class="fi fi-sr-calendar text-[#00c7f2]"></i>
+                                <!-- date input for check out -->
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                        <i class="fi fi-sr-calendar text-[#00c7f2]"></i>
+                                    </div>
+                                    <input datepicker="" type="text"
+                                        class="bg-white border border-gray-300 text-gray-900 sm:text-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5   datepicker-input"
+                                        placeholder="Check Out">
                                 </div>
-                                <input datepicker="" type="text"
-                                    class="bg-white border border-gray-300 text-gray-900 sm:text-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5   datepicker-input"
-                                    placeholder="Check Out">
                             </div>
 
                             <!-- input for how many people -->
@@ -416,8 +418,9 @@
 
                                     <!-- i button -->
                                     <button data-tooltip-target="tooltip-default" type="button"
-                                        class="text-white text-[#00939c] text-2xl focus:ring-0 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-right ml-auto block"><i
-                                            class="fi fi-rr-info"></i></button>
+                                        class="text-white text-[#00939c] text-2xl focus:ring-0 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-right ml-auto block">
+                                        <i class="fi fi-rr-info"></i>
+                                    </button>
 
                                     <div id="tooltip-default" role="tooltip"
                                         class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">

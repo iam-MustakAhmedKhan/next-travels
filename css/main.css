@@ -13,110 +13,116 @@
  ul,
  ol,
  li,
- a{
-    color: var(--primary-color);
+ a {
+     color: var(--primary-color);
  }
 
 
-/* navbar wrapper */
-.navbar-wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 0 auto;
-    z-index: 30;
-}
+ /* navbar wrapper */
+ .navbar-wrap {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     margin: 0 auto;
+     z-index: 30;
+ }
 
-.navbar {
-    z-index: 50 !important;
-}
+ .navbar {
+     z-index: 50 !important;
+ }
 
-/* hero  section main start */
+ /* hero  section main start */
 
-.main {
-    background-image: url('../asstets/images/home-img.jpeg');
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+ .main,
+ .villaggi-main {
+     background-image: url('../asstets/images/home-img.jpeg');
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top;
 
-}
+ }
 
-#home-section {
-    background-image: url('../asstets/images/wave-haikei.svg');
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    background-position: left;
-    
-}
+ .villaggi-main {
 
-@media screen and (max-width: 1024px) {
-    #home-section{
-        background: none;
-        position: relative;
-        background: #00000077;
+    background-image: linear-gradient(180deg, rgba(0, 199, 242, 1) 0%, rgba(33, 54, 70, 0) 60%),url('../asstets/images/img-2.jpeg');
+ }
 
-    }
+ #home-section {
+     background-image: url('../asstets/images/wave-haikei.svg');
+     height: 100%;
+     width: 100%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     top: 0;
+     background-position: left;
 
-}
-/* hero  section main End */
+ }
 
+ @media screen and (max-width: 1024px) {
+     #home-section {
+         background: none;
+         position: relative;
+         background: #00000077;
 
-/* for section gradient */
-.section-container{
-    background-image: linear-gradient(to bottom, #00919b, #008496, #007690, #006988, #005c7e, #005a87, #13568e, #2d5192, #5c50a3, #8e48a9, #bf35a1, #ea088c);
-    width: 100%;
-    height: 100%;
+     }
 
-}
+ }
+
+ /* hero  section main End */
 
 
-/* subscribe section */
-.subscribe {
-    background-image: url('../asstets/images/img-2.jpeg');
-    width: 100%;
-    height: 700px;
-    transform: rotate(180deg);
-    background-position: bottom;
-    object-fit: cover;
-}
+ /* for section gradient */
+ .section-container {
+     background-image: linear-gradient(to bottom, #00919b, #008496, #007690, #006988, #005c7e, #005a87, #13568e, #2d5192, #5c50a3, #8e48a9, #bf35a1, #ea088c);
+     width: 100%;
+     height: 100%;
+
+ }
 
 
-/* footer section */
-.footer-section ul li{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    color: white;
-    gap: 4px;
-    row-gap: 30px;
-    margin-bottom: 15px;
-}
+ /* subscribe section */
+ .subscribe {
+     background-image: url('../asstets/images/img-2.jpeg');
+     width: 100%;
+     height: 700px;
+     transform: rotate(180deg);
+     background-position: bottom;
+     object-fit: cover;
+ }
+
+
+ /* footer section */
+ .footer-section ul li {
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     color: white;
+     gap: 4px;
+     row-gap: 30px;
+     margin-bottom: 15px;
+ }
 
 
 
 
 
-/* utility */
-.triangle-topleft {
-    width: 0;
-    height: 0;
-    top: 100%;
-    bottom: -10px;
-    border-top: 8px solid #b40e6f;
-    border-right: 24px solid transparent;
-    position: absolute;
-    right: 0;
+ /* utility */
+ .triangle-topleft {
+     width: 0;
+     height: 0;
+     top: 100%;
+     bottom: -10px;
+     border-top: 8px solid #b40e6f;
+     border-right: 24px solid transparent;
+     position: absolute;
+     right: 0;
 
-}
+ }
 
-.divider {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-
+ .divider {
+     margin-top: 0 !important;
+     margin-bottom: 0 !important;
+ }
