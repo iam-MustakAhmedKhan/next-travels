@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Search Page</title>
+
+    <!-- Tailwind css CDN -->
+    <script src="../js/tailwind.js"></script>
+
+    <!-- daisy Ui library and flowbit ui library css -->
+    <link rel="stylesheet" href="../css/ui/uiComponents.css">
+    <link rel="stylesheet" href="../css/ui/flowbit.css" />
+
+    <!-- flaticon interfce icons -->
+    <link rel="stylesheet" href="../css/icons/icon.css">
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="../css/main.css">
+
+
+    <!-- flowbit ui library javascript -->
+    <script src="../js/ui/flowbit.js"></script>
+    <script src="../js/ui/date-picker.js"></script>
+
+</head>
+
+<body>
+    <!-- Navbar start -->
+
+    <div class="navbar-wrap">
+        <!-- large screen navbar start -->
+        <nav class="bg-[#00416a]">
+            <div class="container mx-auto relative px-4 py-4 flex justify-between items-center ">
+                <!-- logo  -->
+                <a class="text-3xl font-bold leading-none  " href="#">
+                    <h1 class="max-lg:text-white text-white">LOGO</h1>
+                </a>
+
+                <!-- hamburger menu -->
+                <div class="lg:hidden">
+                    <button class="navbar-burger flex items-center text-white p-3 text-xl">
+                        <i class="fi fi-br-bars-staggered"></i>
+                    </button>
+                </div>
+
+                <!-- link items -->
+                <ul
+                    class="hidden absolute top-1/2 left-1/3 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+                    <li><a class="text-md hover:text-gray-400 transition-all text-white" href="">villaggi</a></li>
+                    <li><a class="text-md hover:text-gray-400 transition-all text-white" href="#">Offerte</a></li>
+
+                    <li><a class="text-md hover:text-gray-400 transition-all text-white" href="#">Cataloghi</a></li>
+                </ul>
+
+                <!-- phone, envelop,and people icon -->
+                <a class="hidden lg:inline-block lg:ml-auto py-2 px-6 text-sm text-white font-bold  rounded-full transition duration-200"
+                    href="#"><i class="fi fi-sr-phone-call text-xl"></i></a>
+                <a class="hidden lg:inline-block py-2 px-6 text-sm text-white font-bold rounded-full transition duration-200"
+                    href="#"><i class="fi fi-sr-envelope text-xl"></i></a>
+                <a class="hidden lg:inline-block py-2 px-6 text-sm text-white font-bold rounded-full transition duration-200"
+                    href="#"><i class="fi fi-sr-user text-xl"></i></a>
+            </div>
+        </nav>
+        <!-- large screen navbar end -->
+    </div>
+
+    <!-- Mobile Nav start -->
+    <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+                <!-- logo -->
+                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                    <h1>LOGO</h1>
+                </a>
+                <!-- cross icon when mobile side menu open -->
+                <button class="navbar-close">
+                    <i class="fi fi-br-cross"></i>
+                </button>
+
+            </div>
+            <!-- link items for mobile sidebar -->
+            <div>
+                <ul>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">villaggi</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">Offerte</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
+                            href="#">Cataloghi</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- phone,envelop,and people icons -->
+            <div class="mt-auto">
+                <div class="pt-6 flex gap-4">
+                    <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold leading-none  hover:bg-gray-100 rounded-xl"
+                        href="#"><i class="fi fi-sr-phone-call text-xl"></i></a>
+                    <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-black font-semibold hover:bg-gray-100 rounded-xl"
+                        href="#"><i class="fi fi-sr-envelope text-xl"></i></a>
+                    <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-black font-semibold hover:bg-gray-100 rounded-xl"
+                        href="#"><i class="fi fi-sr-user text-xl"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Mobile Nav End -->
+
+    <!-- Navbar End -->
+
+
+    <!-- search page top info start -->
+
+    <section class="mt-24 px-6 py-4">
+        <div class="container mx-auto">
+            <div class="search-page-top">
+                <h1 class="text-5xl font-bold py-2 mb-3">I risultati della tua ricerca</h1>
+                <h2 class="text-gray-500 text-xl font-bold">Sharm El Sheikh - Egitto</h2>
+                <div class="flex items-center justify-between mt-3 max-lg:flex-wrap">
+
+                    <div class="flex items-center justify-between gap-6 max-lg:flex-wrap">
+                        <p class="text-lg text-gray-400"><i class="text-[#01c7f2] fi fi-sr-plane-departure"></i> Volo da
+                            Bari (BRI)</p>
+                        <p class="text-lg text-gray-400"><i class="text-[#01c7f2] fi fi-ss-users"></i> 2 ospiti, 1
+                            camera</p>
+                        <p class="text-lg text-gray-400"><i class="text-[#01c7f2] fi fi-sr-calendar-check"></i> 18/11/23
+                            >> 25/11/23</p>
+                    </div>
+
+                    <button class="text-gray-500 font-bold text-xl max-lg:mt-4"> MODIFICA RICERCA <i
+                            class="text-[#01c7f2] fi fi-sr-pencil"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- search page top info End -->
+
+    <!-- search result section start -->
+    <section class="">
+        <div class="result-heading bg-[#00c7f2] py-5 px-6">
+            <div class="container mx-auto">
+                <div class="flex items-center justify-between max-lg:flex-wrap">
+                    <div class="flex items-center gap-4">
+                        <div class="result-count text-2xl font-bold">
+                            <h1>33 Risultati</h1>
+                        </div>
+                        <div class="result-map text-2xl font-bold">
+                            <a href="#" class="flex items-center gap-2">
+                                <i class="fi fi-ss-map-marker"></i>
+                                <h1>MAPPA</h1>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="flex items-center">
+                        <p class="text-2xl">Ordina per :</p>
+                        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+                            class="text-2xl text-white focus:ring-0 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+                            type="button">Prezzo crescente <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+
+                        <!-- Dropdown menu -->
+                        <div id="dropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownDefaultButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
+                                        out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- search result section End -->
+
+    <!-- seach page main sectio start -->
+
+    <main class="py-5">
+        <div class="container mx-auto px-6">
+            <div class="main-wrap flex max-lg:flex-col gap-6">
+                <div class="left w-2/4 max-lg:w-full">
+
+                    <!--search filter options start-->
+                    <div class="bg-[#00416a] p-4  gap-4 flex flex-col">
+                        <div class="grid lg:flex-row gap-4 ">
+
+                            <!-- hotels dropdown -->
+                            <div class="bg-white flex items-center justify-c px-3 flex-1 ">
+                                <i class="fi fi-rr-caret-down text-xl text-[#00c7f2]"></i>
+                                <select
+                                    class="text-black appearance-none outline-none px-2 w-full h-full py-2 px-3 border-none outline-none focus:ring-0 ">
+                                    <option value="1">Hotel/Destinazione</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                    <option value="4">Four</option>
+                                    <option value="5">Five</option>
+                                    <option value="6">Six</option>
+                                    <option value="7">Seven</option>
+                                    <option value="8">Eight</option>
+                                    <option value="9">Nine</option>
+                                    <option value="10">Ten</option>
+                                </select>
+                            </div>
+
+                            <!-- input -->
+                            <div class="bg-white flex items-center justify-c px-3 flex-1">
+                                <i class="fi fi-sr-briefcase text-[#00c7f2]"></i>
+                                <input type="text" placeholder="Volo e soggiorno"
+                                    class="w-full h-full px-3 outline-none py-2 px-3 border-none outline-none focus:ring-0">
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 flex-col">
+
+                            <!-- date input for check in -->
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <i class="fi fi-sr-calendar text-[#00c7f2]"></i>
+                                </div>
+                                <input datepicker="" type="text"
+                                    class="bg-white border border-gray-300 text-gray-900 sm:text-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5   datepicker-input"
+                                    placeholder="Check In">
+                            </div>
+
+                            <!-- date input for check out -->
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <i class="fi fi-sr-calendar text-[#00c7f2]"></i>
+                                </div>
+                                <input datepicker="" type="text"
+                                    class="bg-white border border-gray-300 text-gray-900 sm:text-sm focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5   datepicker-input"
+                                    placeholder="Check Out">
+                            </div>
+
+                            <!-- input for how many people -->
+                            <div class="bg-white flex items-center justify-center px-3">
+                                <i class="fi fi-sr-users text-[#00c7f2]"></i>
+                                <input type="text" placeholder="Composizione camera"
+                                    class="w-full h-full px-3 outline-none py-2 px-3 border-none outline-none focus:ring-0">
+                            </div>
+
+                            <!-- button -->
+                            <button class="bg-[#ea088c] py-2 px-3 text-white">CERCA</button>
+                        </div>
+
+                    </div>
+                    <!--search filter options end-->
+
+                    <div class="bg-[#e6f9fd] mt-4 p-4 gap-4 flex flex-col">
+
+                        <!-- date check -->
+                        <div class="flex items-center justify-between">
+                            <p>Date</p>
+                            <a href="#" class="underline">Rimuovi tutto</a>
+                        </div>
+                        <div class="flex items-center">
+                            <input id="date-check-1" type="checkbox" value=""
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                            <label for="date-check-1" class="ms-2 text-sm font-medium">18/11/2023</label>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <input id="date-check-2" type="checkbox" value=""
+                                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-0">
+                            <label for="date-check-2" class="ms-2 text-sm font-medium">19/11/2023</label>
+                        </div>
+
+                        <!-- budget range -->
+                        <div class="flex items-center justify-between">
+                            <p class="font-bold text-xl">Budget</p>
+                            <a href="#" class="underline">Rimuovi tutto</a>
+                        </div>
+
+                        <div class="relative mb-6">
+                            <label for="labels-range-input" class="sr-only">Labels range</label>
+                            <input id="labels-range-input" type="range" value="1000" min="100" max="1500"
+                                class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+                            <span class="text-sm text-gray-500  absolute start-0 -bottom-6">€ 950</span>
+
+                            <span class="text-sm text-gray-500 dark:text-gray-400 absolute end-0 -bottom-6">€
+                                3600</span>
+                        </div>
+
+                        <!-- last link -->
+                        <div class="flex items-center justify-between">
+                            <p class="font-bold text-xl">Trattamenti</p>
+                            <a href="#" class="underline">Rimuovi tutto</a>
+                        </div>
+
+
+                        <!-- button -->
+                        <button class="bg-[#ea088c] py-2 px-3 text-white">APPLICA</button>
+
+                    </div>
+
+                </div>
+                <div class="right">
+
+                    <div class="search-page-cards flex flex-col gap-10">
+
+                        <!-- card start -->
+                        <div class="search-card flex max-lg:flex-col gap-6 shadow-xl ">
+                            <div class="image h-auto w-1/2 max-lg:w-full object-cover">
+                                <img src="../asstets/images/img-2.jpeg" class="w-full h-full object-cover" alt="">
+                            </div>
+                            <div class="card-info flex flex-col justify-between h-auto w-1/2 max-lg:w-full pb-4">
+                                <div>
+                                    <p class="py-2">EGITTO</p>
+                                    <h1 class="text-xl font-bold">Sharm Albatros Royal Grand</h1>
+                                    <div class="divider before:bg-gray-600 after:bg-gray-600"></div>
+
+                                    <div class="card-checks">
+
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-sr-calendar-check text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Dal 12/11/2023 | 8 giorni 7
+                                                notti</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-ss-marker text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Sharm el-Sheikh, Egitto</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-sr-bed-alt text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">1X Camera Deluxe</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-sr-plane-departure text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Volo village</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-ss-cocktail-alt text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Hard All Inclusive</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <h3 class="font-bold"><i class="fi fi-ss-thumbtack text-[#ea088c]"></i> NO PASSAPORTO
+                                </h3>
+
+                            </div>
+                            <div class="w-1/2 max-lg:w-full">
+
+                                <div class="flex items-center gap-6 mb-3">
+                                    <button class="flex items-center gap-2 bg-[#00939c] text-white py-2 px-3">
+                                        <i class="fi fi-rr-rotate-right"></i>
+                                        <p class="text-white">Cambia parametri</p>
+                                    </button>
+
+                                    <button class="text-4xl text-[#00c7f2]">
+                                        <i class="fi fi-rs-star"></i>
+                                    </button>
+                                </div>
+
+                                <div class="bg-[#00416a] p-4">
+                                    <h1 class="text-xl font-bold text-white">COS'É INCLUSO</h1>
+                                    <ul class="py-3">
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Direttamente sul mare</span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Wi-Fi gratis nelle aree comuni</span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Animazione per tutte le etå</span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Pensione completa</span>
+                                        </li>
+
+                                        <div class="divider before:bg-[#00c7f2] after:bg-[#00c7f2]"></div>
+
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-sr-cross-small text-gray-300"></i>
+                                            <span class="text-white">Bagaglio in Stiva da aggiungere</span>
+                                        </li>
+                                    </ul>
+
+                                    <!-- i button -->
+                                    <button data-tooltip-target="tooltip-default" type="button"
+                                        class="text-white text-[#00939c] text-2xl focus:ring-0 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-right ml-auto block"><i
+                                            class="fi fi-rr-info"></i></button>
+
+                                    <div id="tooltip-default" role="tooltip"
+                                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                        Tooltip content
+                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                    </div>
+
+                                    <div class="budget-info text-center">
+                                        <p class="text-white">€ 1.300 / 2 adulti</p>
+                                        <h1 class="text-white text-4xl font-bold py-2">€ 1300</h1>
+                                        <button class="bg-[#ea088c] py-2 px-3 text-white w-full">CONTINUA</button>
+                                    </div>
+                                    <!-- button -->
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- card end -->
+
+                        <!-- card start -->
+                        <div class="search-card flex max-lg:flex-col gap-6 shadow-xl ">
+                            <div class="image h-auto w-1/2 max-lg:w-full object-cover">
+                                <img src="../asstets/images/img-2.jpeg" class="w-full h-full object-cover" alt="">
+                            </div>
+                            <div class="card-info flex flex-col justify-between h-auto w-1/2 max-lg:w-full pb-4">
+                                <div>
+                                    <p class="py-2">EGITTO</p>
+                                    <h1 class="text-xl font-bold">Sharm Albatros Royal Grand</h1>
+                                    <div class="divider before:bg-gray-600 after:bg-gray-600"></div>
+
+                                    <div class="card-checks">
+
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-sr-calendar-check text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Dal 12/11/2023 | 8 giorni 7
+                                                notti</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-ss-marker text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Sharm el-Sheikh, Egitto</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-sr-bed-alt text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">1X Camera Deluxe</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-sr-plane-departure text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Volo village</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-ss-cocktail-alt text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Hard All Inclusive</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <h3 class="font-bold"><i class="fi fi-ss-thumbtack text-[#ea088c]"></i> NO PASSAPORTO
+                                </h3>
+
+                            </div>
+                            <div class="w-1/2 max-lg:w-full">
+
+                                <div class="flex items-center gap-6 mb-3">
+                                    <button class="flex items-center gap-2 bg-[#00939c] text-white py-2 px-3">
+                                        <i class="fi fi-rr-rotate-right"></i>
+                                        <p class="text-white">Cambia parametri</p>
+                                    </button>
+
+                                    <button class="text-4xl text-[#00c7f2]">
+                                        <i class="fi fi-rs-star"></i>
+                                    </button>
+                                </div>
+
+                                <div class="bg-[#00416a] p-4">
+                                    <h1 class="text-xl font-bold text-white">COS'É INCLUSO</h1>
+                                    <ul class="py-3">
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Direttamente sul mare</span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Wi-Fi gratis nelle aree comuni</span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Animazione per tutte le etå</span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Pensione completa</span>
+                                        </li>
+
+                                        <div class="divider before:bg-[#00c7f2] after:bg-[#00c7f2]"></div>
+
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-sr-cross-small text-gray-300"></i>
+                                            <span class="text-white">Bagaglio in Stiva da aggiungere</span>
+                                        </li>
+                                    </ul>
+
+                                    <!-- i button -->
+                                    <button data-tooltip-target="tooltip-default" type="button"
+                                        class="text-white text-[#00939c] text-2xl focus:ring-0 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-right ml-auto block"><i
+                                            class="fi fi-rr-info"></i></button>
+
+                                    <div id="tooltip-default" role="tooltip"
+                                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                        Tooltip content
+                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                    </div>
+
+                                    <div class="budget-info text-center">
+                                        <p class="text-white">€ 1.300 / 2 adulti</p>
+                                        <h1 class="text-white text-4xl font-bold py-2">€ 1300</h1>
+                                        <button class="bg-[#ea088c] py-2 px-3 text-white w-full">CONTINUA</button>
+                                    </div>
+                                    <!-- button -->
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- card end -->
+
+                        <!-- card start -->
+                        <div class="search-card flex max-lg:flex-col gap-6 shadow-xl ">
+                            <div class="image h-auto w-1/2 max-lg:w-full object-cover">
+                                <img src="../asstets/images/img-2.jpeg" class="w-full h-full object-cover" alt="">
+                            </div>
+                            <div class="card-info flex flex-col justify-between h-auto w-1/2 max-lg:w-full pb-4">
+                                <div>
+                                    <p class="py-2">EGITTO</p>
+                                    <h1 class="text-xl font-bold">Sharm Albatros Royal Grand</h1>
+                                    <div class="divider before:bg-gray-600 after:bg-gray-600"></div>
+
+                                    <div class="card-checks">
+
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-sr-calendar-check text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Dal 12/11/2023 | 8 giorni 7
+                                                notti</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-ss-marker text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Sharm el-Sheikh, Egitto</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-sr-bed-alt text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">1X Camera Deluxe</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-sr-plane-departure text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Volo village</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-ss-cocktail-alt text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Hard All Inclusive</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <h3 class="font-bold"><i class="fi fi-ss-thumbtack text-[#ea088c]"></i> NO PASSAPORTO
+                                </h3>
+
+                            </div>
+                            <div class="w-1/2 max-lg:w-full">
+
+                                <div class="flex items-center gap-6 mb-3">
+                                    <button class="flex items-center gap-2 bg-[#00939c] text-white py-2 px-3">
+                                        <i class="fi fi-rr-rotate-right"></i>
+                                        <p class="text-white">Cambia parametri</p>
+                                    </button>
+
+                                    <button class="text-4xl text-[#00c7f2]">
+                                        <i class="fi fi-rs-star"></i>
+                                    </button>
+                                </div>
+
+                                <div class="bg-[#00416a] p-4">
+                                    <h1 class="text-xl font-bold text-white">COS'É INCLUSO</h1>
+                                    <ul class="py-3">
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Direttamente sul mare</span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Wi-Fi gratis nelle aree comuni</span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Animazione per tutte le etå</span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Pensione completa</span>
+                                        </li>
+
+                                        <div class="divider before:bg-[#00c7f2] after:bg-[#00c7f2]"></div>
+
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-sr-cross-small text-gray-300"></i>
+                                            <span class="text-white">Bagaglio in Stiva da aggiungere</span>
+                                        </li>
+                                    </ul>
+
+                                    <!-- i button -->
+                                    <button data-tooltip-target="tooltip-default" type="button"
+                                        class="text-white text-[#00939c] text-2xl focus:ring-0 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-right ml-auto block"><i
+                                            class="fi fi-rr-info"></i></button>
+
+                                    <div id="tooltip-default" role="tooltip"
+                                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                        Tooltip content
+                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                    </div>
+
+                                    <div class="budget-info text-center">
+                                        <p class="text-white">€ 1.300 / 2 adulti</p>
+                                        <h1 class="text-white text-4xl font-bold py-2">€ 1300</h1>
+                                        <button class="bg-[#ea088c] py-2 px-3 text-white w-full">CONTINUA</button>
+                                    </div>
+                                    <!-- button -->
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- card end -->
+
+                        <!-- card start -->
+                        <div class="search-card flex max-lg:flex-col gap-6 shadow-xl ">
+                            <div class="image h-auto w-1/2 max-lg:w-full object-cover">
+                                <img src="../asstets/images/img-2.jpeg" class="w-full h-full object-cover" alt="">
+                            </div>
+                            <div class="card-info flex flex-col justify-between h-auto w-1/2 max-lg:w-full pb-4">
+                                <div>
+                                    <p class="py-2">EGITTO</p>
+                                    <h1 class="text-xl font-bold">Sharm Albatros Royal Grand</h1>
+                                    <div class="divider before:bg-gray-600 after:bg-gray-600"></div>
+
+                                    <div class="card-checks">
+
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-sr-calendar-check text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Dal 12/11/2023 | 8 giorni 7
+                                                notti</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-ss-marker text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Sharm el-Sheikh, Egitto</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-sr-bed-alt text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">1X Camera Deluxe</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-sr-plane-departure text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Volo village</span>
+                                        </p>
+                                        <p class="flex items-center gap-2 py-1">
+                                            <i class="fi fi-ss-cocktail-alt text-[#01c7f2]"></i>
+                                            <span class="font-semibold text-gray-500">Hard All Inclusive</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <h3 class="font-bold"><i class="fi fi-ss-thumbtack text-[#ea088c]"></i> NO PASSAPORTO
+                                </h3>
+
+                            </div>
+                            <div class="w-1/2 max-lg:w-full">
+
+                                <div class="flex items-center gap-6 mb-3">
+                                    <button class="flex items-center gap-2 bg-[#00939c] text-white py-2 px-3">
+                                        <i class="fi fi-rr-rotate-right"></i>
+                                        <p class="text-white">Cambia parametri</p>
+                                    </button>
+
+                                    <button class="text-4xl text-[#00c7f2]">
+                                        <i class="fi fi-rs-star"></i>
+                                    </button>
+                                </div>
+
+                                <div class="bg-[#00416a] p-4">
+                                    <h1 class="text-xl font-bold text-white">COS'É INCLUSO</h1>
+                                    <ul class="py-3">
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Direttamente sul mare</span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Wi-Fi gratis nelle aree comuni</span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Animazione per tutte le etå</span>
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-br-check text-[#00c7f2] font-bold"></i>
+                                            <span class="text-white">Pensione completa</span>
+                                        </li>
+
+                                        <div class="divider before:bg-[#00c7f2] after:bg-[#00c7f2]"></div>
+
+                                        <li class="flex items-center gap-2">
+                                            <i class="fi fi-sr-cross-small text-gray-300"></i>
+                                            <span class="text-white">Bagaglio in Stiva da aggiungere</span>
+                                        </li>
+                                    </ul>
+
+                                    <!-- i button -->
+                                    <button data-tooltip-target="tooltip-default" type="button"
+                                        class="text-white text-[#00939c] text-2xl focus:ring-0 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-right ml-auto block"><i
+                                            class="fi fi-rr-info"></i></button>
+
+                                    <div id="tooltip-default" role="tooltip"
+                                        class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                        Tooltip content
+                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                    </div>
+
+                                    <div class="budget-info text-center">
+                                        <p class="text-white">€ 1.300 / 2 adulti</p>
+                                        <h1 class="text-white text-4xl font-bold py-2">€ 1300</h1>
+                                        <button class="bg-[#ea088c] py-2 px-3 text-white w-full">CONTINUA</button>
+                                    </div>
+                                    <!-- button -->
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- card end -->
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- seach page main sectio End -->
+
+
+
+
+    <!-- main javascript file linking -->
+    <script src="../js/app.js"></script>
+
+</body>
+
+</html>
